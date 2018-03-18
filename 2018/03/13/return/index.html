@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>vue运行指令 | 前端|Ouyoung</title>
+  <title>return/return ture/return false的区别 | 前端|Ouyoung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="“简单却不失优雅，小巧而不乏大匠”。">
-<meta name="keywords" content="Notes,Vue">
+  <meta name="description" content="正确理解return">
+<meta name="keywords" content="Notes">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue运行指令">
-<meta property="og:url" content="https://ouyoungs7.coding.me/2018/03/17/vue指令记录/index.html">
+<meta property="og:title" content="return&#x2F;return ture&#x2F;return false的区别">
+<meta property="og:url" content="https://ouyoungs7.coding.me/2018/03/13/return/index.html">
 <meta property="og:site_name" content="前端|Ouyoung">
-<meta property="og:description" content="“简单却不失优雅，小巧而不乏大匠”。">
+<meta property="og:description" content="正确理解return">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-18T18:04:56.528Z">
+<meta property="og:updated_time" content="2018-03-13T13:42:03.622Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue运行指令">
-<meta name="twitter:description" content="“简单却不失优雅，小巧而不乏大匠”。">
+<meta name="twitter:title" content="return&#x2F;return ture&#x2F;return false的区别">
+<meta name="twitter:description" content="正确理解return">
   
   
     <link rel="icon" href="//img/favicon.ico">
@@ -203,7 +203,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/Angular-JS/" style="font-size: 10px;">Angular JS</a> <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Vue/" style="font-size: 16.67px;">Vue</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/reference/" style="font-size: 13.33px;">reference</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a>
+                        <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Vue/" style="font-size: 16.67px;">Vue</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/reference/" style="font-size: 13.33px;">reference</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a>
                     </div>
                 </section>
                 
@@ -278,11 +278,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-vue指令记录" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-return" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/03/17/vue指令记录/" class="article-date">
-      <time datetime="2018-03-17T13:22:28.000Z" itemprop="datePublished">2018-03-17</time>
+      <a href="/2018/03/13/return/" class="article-date">
+      <time datetime="2018-03-13T13:33:14.000Z" itemprop="datePublished">2018-03-13</time>
 </a>
     </div>
   
@@ -295,7 +295,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      vue运行指令
+      return/return ture/return false的区别
     </h1>
   
 
@@ -306,7 +306,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -316,14 +316,19 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>“简单却不失优雅，小巧而不乏大匠”。<br><a id="more"></a></p>
-<p>vue init webpack myvue //快速创建vue项目</p>
-<p>cd myvue //进入目录</p>
-<p>git init //初始化仓库</p>
-<p>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:ouyoungsy/ouyoungs7.git</p>
-<p>//关联远程仓库</p>
-<p>npm install  //安装插件模块</p>
-<p>npm run dev  //运行项目</p>
+        <p>正确理解return<br><a id="more"></a></p>
+<h1 id="1-return-表达式"><a href="#1-return-表达式" class="headerlink" title="1 return 表达式"></a>1 return 表达式</h1><blockquote>
+<p>// 结束函数执行，返回表达式的值。</p>
+</blockquote>
+<h1 id="2-return"><a href="#2-return" class="headerlink" title="2 return"></a>2 return</h1><blockquote>
+<p>// 无函数结果的返回，但把控制权返回给了页面。<br>&nbsp;</p>
+</blockquote>
+<h1 id="3-return-false"><a href="#3-return-false" class="headerlink" title="3 return false"></a>3 return false</h1><blockquote>
+<p>// 终止符：事件处理函数中返回false，取消默认的事件行为。且只在当前函数有效，并不影响其他外部函数的执行。</p>
+</blockquote>
+<h1 id="4-return-ture"><a href="#4-return-ture" class="headerlink" title="4 return ture"></a>4 return ture</h1><blockquote>
+<p>// 执行符： 返回正确的处理结果/默认结果。</p>
+</blockquote>
 
       
       
@@ -379,13 +384,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/03/17/vue指令记录/">vue运行指令</a></p>
+        <p><span>本文标题:</span><a href="/2018/03/13/return/">return/return ture/return false的区别</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Ouyoung 的个人博客">Ouyoung</a></p>
-        <p><span>发布时间:</span>2018年03月17日 - 21时22分</p>
-        <p><span>最后更新:</span>2018年03月19日 - 02时04分</p>
+        <p><span>发布时间:</span>2018年03月13日 - 21时33分</p>
+        <p><span>最后更新:</span>2018年03月13日 - 21时42分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/03/17/vue指令记录/" title="vue运行指令">https://ouyoungs7.coding.me/2018/03/17/vue指令记录/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://ouyoungs7.coding.me/2018/03/17/vue指令记录/　　作者: Ouyoung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/13/return/" title="return/return ture/return false的区别">https://ouyoungs7.coding.me/2018/03/13/return/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://ouyoungs7.coding.me/2018/03/13/return/　　作者: Ouyoung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -398,18 +403,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/03/17/vue文档目录/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/03/13/理解上下文环境/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Vue目录结构
+          理解上下文环境
         
       </div>
     </a>
   
   
-    <a href="/2018/03/17/vue.js快速入门/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Vue.js快速入门</div>
+    <a href="/2018/03/13/邮箱推送电子书到kindle/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">推送电子书到kindle</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -420,7 +425,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-return-表达式"><span class="toc-number">1.</span> <span class="toc-text">1 return 表达式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-return"><span class="toc-number">2.</span> <span class="toc-text">2 return</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-return-false"><span class="toc-number">3.</span> <span class="toc-text">3 return false</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-return-ture"><span class="toc-number">4.</span> <span class="toc-text">4 return ture</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -487,18 +492,18 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/03/17/vue文档目录/" title="上一篇: Vue目录结构">
+            <a href="/2018/03/13/理解上下文环境/" title="上一篇: 理解上下文环境">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2018/03/17/vue.js快速入门/" title="下一篇: Vue.js快速入门">
+            <a href="/2018/03/13/邮箱推送电子书到kindle/" title="下一篇: 推送电子书到kindle">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/vue三种书写形式/">vue组件的三种书写形式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue文档目录/">Vue目录结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue指令记录/">vue运行指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue.js快速入门/">Vue.js快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/快速了解Node/">快速了解Node.js</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/AngularJS指令/">AngularJS实例</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Webpack/">Webpack</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Angular-JS/">Angular JS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Bootstrap/">Bootstrap</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/jQuery/">jQuery</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/十大框架/">十大框架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/ES6特性/">ES6特性</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/动-静态资源/">动/静态资源</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/关于图像格式/">关于图像格式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Git指令/">Git指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Webstorm指令/">Webstorm指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/eval-函数/">eval()函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/理解上下文环境/">理解上下文环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/return-return-ture-return-false的区别/">return/return ture/return false的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/邮箱推送电子书到kindle/">推送电子书到kindle</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/11/Markdown语言运用/">Markdown语法快速入门</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue文档目录/">Vue目录结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue.js指令与快速入门/">vue.js指令与快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/16/vue三种书写形式/">vue组件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/快速了解Node/">快速了解Node.js</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/AngularJS/">AngularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Webpack/">Webpack</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Bootstrap/">Bootstrap</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/十大框架/">十大框架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/jQuery/">jQuery</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/ES6/">ES6特性</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/动-静态资源/">动/静态资源</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/关于图像格式/">关于图像格式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Git/">Git指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Webstorm指令/">Webstorm指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/eval()/">eval()函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/理解上下文环境/">理解上下文环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/return/">return/return ture/return false的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/邮箱推送电子书到kindle/">推送电子书到kindle</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/11/Markdown/">Markdown语法快速入门</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
