@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Blockly的Android集成及源码分析 | 前端|Ouyoung</title>
+  <title>Blockly | 前端|Ouyoung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解一下大概思想吧。">
-<meta name="keywords" content="Notes,Vue">
+  <meta name="description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解大概思想。">
+<meta name="keywords" content="Notes,Blocky">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blockly的Android集成及源码分析">
-<meta property="og:url" content="https://ouyoungs7.coding.me/2018/03/18/Blocky的Android集成与分析/index.html">
+<meta property="og:title" content="Blockly">
+<meta property="og:url" content="https://ouyoungs7.coding.me/2018/03/18/Blocky/index.html">
 <meta property="og:site_name" content="前端|Ouyoung">
-<meta property="og:description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解一下大概思想吧。">
+<meta property="og:description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解大概思想。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-18T18:35:55.245Z">
+<meta property="og:updated_time" content="2018-03-18T18:38:43.952Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blockly的Android集成及源码分析">
-<meta name="twitter:description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解一下大概思想吧。">
+<meta name="twitter:title" content="Blockly">
+<meta name="twitter:description" content="网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解大概思想。">
   
   
     <link rel="icon" href="//img/favicon.ico">
@@ -203,7 +203,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Vue/" style="font-size: 16.67px;">Vue</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/reference/" style="font-size: 13.33px;">reference</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a>
+                        <a href="/tags/AngularJS/" style="font-size: 10px;">AngularJS</a> <a href="/tags/Blocky/" style="font-size: 10px;">Blocky</a> <a href="/tags/Bootstrap/" style="font-size: 10px;">Bootstrap</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Node/" style="font-size: 10px;">Node</a> <a href="/tags/Notes/" style="font-size: 20px;">Notes</a> <a href="/tags/Vue/" style="font-size: 16.67px;">Vue</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/reference/" style="font-size: 13.33px;">reference</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a>
                     </div>
                 </section>
                 
@@ -278,10 +278,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-Blocky的Android集成与分析" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Blocky" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/03/18/Blocky的Android集成与分析/" class="article-date">
+      <a href="/2018/03/18/Blocky/" class="article-date">
       <time datetime="2018-03-18T13:22:28.000Z" itemprop="datePublished">2018-03-18</time>
 </a>
     </div>
@@ -295,7 +295,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Blockly的Android集成及源码分析
+      Blockly
     </h1>
   
 
@@ -306,7 +306,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blocky/">Blocky</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Notes/">Notes</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -316,7 +316,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解一下大概思想吧。<br><a id="more"></a><br>辩证地来看，编程精髓是八九不离十的。<br>看完这个，万分感谢该博主。</p>
+        <p>网上关于Blockly源码解析的文档实在太少，暂且看看这个，了解大概思想。<br><a id="more"></a><br>辩证地来看，编程精髓是八九不离十的。<br>看完这个，万分感谢该博主。</p>
 <h1 id="1-Blocky模块"><a href="#1-Blocky模块" class="headerlink" title="1 Blocky模块"></a>1 Blocky模块</h1><p>通过拖拽、类似搭建积木，来实现基本逻辑和操作；<br>图形化的编程，但最终显示为代码，可操控机器人。</p>
 <h1 id="2-实现过程"><a href="#2-实现过程" class="headerlink" title="2 实现过程"></a>2 实现过程</h1><h2 id="2-1-Blocky方式"><a href="#2-1-Blocky方式" class="headerlink" title="2.1 Blocky方式"></a>2.1 Blocky方式</h2><blockquote>
 <p>新建工程，创建module:blockylib-core 和 blockly-verticle;</p>
@@ -396,13 +396,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/03/18/Blocky的Android集成与分析/">Blockly的Android集成及源码分析</a></p>
+        <p><span>本文标题:</span><a href="/2018/03/18/Blocky/">Blockly</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Ouyoung 的个人博客">Ouyoung</a></p>
         <p><span>发布时间:</span>2018年03月18日 - 21时22分</p>
-        <p><span>最后更新:</span>2018年03月19日 - 02时35分</p>
+        <p><span>最后更新:</span>2018年03月19日 - 02时38分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/03/18/Blocky的Android集成与分析/" title="Blockly的Android集成及源码分析">https://ouyoungs7.coding.me/2018/03/18/Blocky的Android集成与分析/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://ouyoungs7.coding.me/2018/03/18/Blocky的Android集成与分析/　　作者: Ouyoung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/18/Blocky/" title="Blockly">https://ouyoungs7.coding.me/2018/03/18/Blocky/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://ouyoungs7.coding.me/2018/03/18/Blocky/　　作者: Ouyoung" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -504,7 +504,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/Blocky的Android集成与分析/">Blockly的Android集成及源码分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue文档目录/">vue目录结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue.指令与快速入门/">vue指令与快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/16/vue三种书写形式/">vue组件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/Node.js/">Node.js</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/AngularJS/">AngularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Webpack/">Webpack</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Bootstrap/">Bootstrap</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/十大框架/">十大框架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/jQuery/">jQuery</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/动-静态资源/">动/静态资源</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/关于图像格式/">关于图像格式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Git/">Git指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Webstorm指令/">Webstorm指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/eval()/">eval()函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/上下文环境/">理解上下文环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/return/">return</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/kindle推送/">推送电子书到kindle</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/11/Markdown/">Markdown语法快速入门</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/Blocky/">Blockly</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue文档目录/">vue目录结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/17/vue.指令与快速入门/">vue指令与快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/16/vue三种书写形式/">vue组件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/Node.js/">Node.js</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/15/AngularJS/">AngularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Webpack/">Webpack</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/14/Bootstrap/">Bootstrap</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/十大框架/">十大框架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/jQuery/">jQuery</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/动-静态资源/">动/静态资源</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/关于图像格式/">关于图像格式</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Git/">Git指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/Webstorm指令/">Webstorm指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/eval()/">eval()函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/上下文环境/">理解上下文环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/return/">return</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/13/kindle推送/">推送电子书到kindle</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/11/Markdown/">Markdown</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
